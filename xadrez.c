@@ -10,6 +10,8 @@ int main() {
     int bispo_moves = 5;
     int rainha_moves = 8;
     int torre_moves = 7;
+    int cavalo_moves_baixo = 2;
+    int cavalo_moves_esquerda = 1;
 
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
@@ -38,6 +40,16 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\n");
+    printf("Movimentação do Cavalo:\n");
+    while(cavalo_moves_esquerda > 0) {
+        for (cavalo_moves_baixo; cavalo_moves_baixo > 0; cavalo_moves_baixo--)
+        {
+                printf("Baixo\n");
+        } 
+        printf("Esquerda\n");
+        cavalo_moves_esquerda--;
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
